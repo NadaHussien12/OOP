@@ -12,7 +12,22 @@ import java.util.Date;
  * @author SOAQ COMPUTER
  */
 public class Labtob {
-    String screen_type;
+    
+  public Labtob()
+  {
+      
+  }
+    
+   public Labtob(String colour,int price,int productiondate,String generation)
+  {
+      
+      colour=colour;
+      price=price;
+      productiondate=productiondate;
+      generation=generation;
+  } ;
+    
+   
     String colour;
     int price;
     int productiondate;
@@ -24,10 +39,7 @@ public class Labtob {
         return year-productiondate;
     }
     
-    String getScreen_type()
-    {
-        return screen_type;
-    }
+ 
     
     String getColour()
     {
