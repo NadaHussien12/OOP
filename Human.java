@@ -1,0 +1,51 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package toka;
+
+/**
+ *
+ * @author SOAQ COMPUTER
+ */
+public class Human {
+    String type;
+    String skincolor;
+    int weight;
+    int height;
+    String eyecolor;
+    double birthdate;
+    public Human( String t, String s, int w, int h, String e, double b)
+    {
+        type=t;
+        skincolor=s;
+        weight=w;
+        height=h;
+        eyecolor=e;
+        birthdate=b;
+    };
+    String getType()
+            {
+                return type;
+            }
+    String gettSkincolor()
+            {
+                return skincolor;
+            }
+    int getweight()
+            {
+                return weight;
+            }
+     int getheight()
+            {
+                return height;
+            }
+     String getEyecolor()
+     {
+         return eyecolor;
+     }
+     double getBirthdate(){
+         return birthdate;
+     }
+} 
