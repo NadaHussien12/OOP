@@ -1,0 +1,97 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package online.computer.store;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author SOAQ COMPUTER
+ */
+public class OnlineComputerStore {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        
+        
+        Labtob Dell=new Labtob("black",12000,2020,"ninth generation");
+         Labtob HP=new Labtob("white",15000,2019,"seventh generation");
+       
+         Tablets sony=new Tablets();
+         sony.Screen_type="touch";
+      
+        
+         
+         Smartphones oppo=new Smartphones();
+         oppo.Screen_type="touch";
+         
+         
+        /*Labtob Dell=new Labtob();
+        Dell.colour="Black";
+        Dell.price=12000;
+        Dell.generation="ninth generation";
+        Dell.productiondate=2020;
+           
+        
+        Labtob HP=new Labtob();
+       
+        HP.colour="white";
+        HP.price=15000;
+        HP.generation="eighth generation";
+        HP.productiondate=2019;*/
+        
+        
+        System.out.println("for Dell information press 1");
+        System.out.println("for HP information press 2");
+        System.out.println("for sony information press 3");
+        System.out.println("for oppo information press 4");
+        int n=input.nextInt();
+        switch(n){
+            case 1: System.out.println("you have entered Dell information");
+            
+                System.out.println("the colour : "+Dell.getColour());
+                System.out.println("price: "+Dell.getPrice());
+                System.out.println("generation: "+Dell.getGeneration());
+                System.out.println("productiondate: "+Dell.getProductiondate());
+                System.out.println("age of the labtob: "+ Dell.age(Dell.getProductiondate()));
+                break;
+        
+   
+
+               
+            case 2: System.out.println("you have entered HP information");
+            
+                System.out.println("the colour : : "+HP.getColour());
+                System.out.println("price: "+HP.getPrice());
+                System.out.println("generation: "+HP.getGeneration());
+                System.out.println("productiondate: "+HP.getProductiondate());
+                System.out.println("age of the labtob: "+HP.age(HP.getProductiondate()));
+                break;
+                
+            case 3: System.out.println("you have entered sony information");
+            
+            System.out.println("screen type of oppo :"+ oppo.Screen_type);
+                System.out.println("price: "+sony.price);
+                System.out.println("productiondate: "+sony.getProductiondate());
+                System.out.println("age of the labtob: "+sony.age(HP.getProductiondate()));
+                
+                
+                case 4: System.out.println("you have entered oppo information");
+            
+            System.out.println("screen type of oppo :"+ oppo.Screen_type);
+                System.out.println("the colour : : "+oppo.getColour());
+                System.out.println("price: "+oppo.getPrice());
+                System.out.println("generation: "+oppo.getGeneration());
+                System.out.println("productiondate: "+oppo.getProductiondate());
+                System.out.println("age of the labtob: "+sony.age(HP.getProductiondate()));
+                
+            default: System.out.println("you have entered wrong number");
+        }
+    }
+}
